@@ -90,19 +90,22 @@ export default function HowItWorks() {
             {steps.map((step, i) => (
               <div
                 key={step.num}
-                className={`reveal group relative flex flex-col items-center text-center p-6 rounded-3xl ${step.bg} border ${step.border} hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default`}
+                className={`reveal group relative flex flex-col items-center text-center p-7 rounded-3xl ${step.bg} border ${step.border} hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 cursor-default`}
                 style={{ opacity: 0, transform: 'translateY(30px)', transitionDelay: `${i * 120}ms` }}
               >
                 {/* Step number */}
-                <div className={`relative w-16 h-16 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center text-white font-extrabold text-xl shadow-lg mb-5 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`relative w-18 h-18 w-16 h-16 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center text-white font-extrabold text-xl shadow-lg mb-5 group-hover:scale-110 group-hover:rotate-3 transition-all duration-400`}>
                   <span className="text-2xl">{step.icon}</span>
-                  <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-white border-2 border-gray-100 flex items-center justify-center text-gray-600 text-xs font-bold shadow-sm">
+                  <span className="absolute -top-2.5 -right-2.5 w-7 h-7 rounded-full bg-white border-2 border-gray-100 flex items-center justify-center text-gray-700 text-xs font-extrabold shadow-md">
                     {step.num}
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-gray-800 mb-2">{step.title}</h3>
+                <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-indigo-700 transition-colors duration-300">{step.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
+
+                {/* Bottom accent line */}
+                <div className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-1 w-0 group-hover:w-16 rounded-full bg-gradient-to-r ${step.color} transition-all duration-500`} />
               </div>
             ))}
           </div>
@@ -115,7 +118,7 @@ export default function HowItWorks() {
         >
           <a
             href="#apply"
-            className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl hover:opacity-90 hover:shadow-xl hover:shadow-indigo-200 hover:-translate-y-0.5 transition-all duration-200"
+            className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl hover:scale-105 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-300/50 active:scale-100 transition-all duration-300"
           >
             Start Your Application
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

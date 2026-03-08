@@ -105,7 +105,7 @@ export default function WhoCanApply() {
           {categories.map((cat, i) => (
             <div
               key={cat.title}
-              className={`reveal group relative overflow-hidden p-6 rounded-3xl ${cat.bg} border ${cat.border} hover:shadow-xl hover:-translate-y-1.5 transition-all duration-400 cursor-default`}
+              className={`reveal group relative overflow-hidden p-6 rounded-3xl ${cat.bg} border ${cat.border} hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-400 cursor-default`}
               style={{ opacity: 0, transform: 'translateY(30px)', transitionDelay: `${i * 80}ms` }}
             >
               {/* BG gradient blob */}

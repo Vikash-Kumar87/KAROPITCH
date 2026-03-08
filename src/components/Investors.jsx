@@ -110,12 +110,12 @@ export default function Investors() {
           {investors.map((inv, i) => (
             <div
               key={inv.name}
-              className="reveal group bg-white border border-gray-100 rounded-3xl p-6 hover:shadow-2xl hover:-translate-y-2 transition-all duration-400"
+              className="reveal group bg-white border border-gray-100 rounded-3xl p-6 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-400"
               style={{ opacity: 0, transform: 'translateY(30px)', transitionDelay: `${i * 100}ms` }}
             >
               {/* Top */}
               <div className="flex items-start gap-4 mb-4">
-                <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${inv.color} flex items-center justify-center text-white font-bold text-lg shadow-md flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${inv.color} flex items-center justify-center text-white font-bold text-lg shadow-lg flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
                   {inv.avatar}
                 </div>
                 <div className="flex-1 min-w-0">

@@ -131,11 +131,13 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-slate-800 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} Karo Pitch. A{' '}
+            © 2026 Karo Pitch – Built by{' '}
+            <span className="text-indigo-400 font-semibold">Vikash Kumar</span>
+            {' '}· A{' '}
             <a href="https://karostartup.com" className="text-indigo-400 hover:text-indigo-300 transition-colors">
               KaroStartup
             </a>{' '}
-            initiative. All rights reserved.
+            initiative.
           </p>
           <div className="flex items-center gap-1.5 text-sm text-slate-500">
             Made with{' '}

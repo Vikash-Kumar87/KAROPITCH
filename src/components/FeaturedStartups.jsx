@@ -128,7 +128,7 @@ export default function FeaturedStartups() {
           {startups.map((s, i) => (
             <div
               key={s.name}
-              className={`reveal group flex flex-col ${s.bg} border ${s.border} rounded-3xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-400`}
+              className={`reveal group flex flex-col ${s.bg} border ${s.border} rounded-3xl overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-400`}
               style={{ opacity: 0, transform: 'translateY(30px)', transitionDelay: `${i * 80}ms` }}
             >
               {/* Card header */}
@@ -158,7 +158,7 @@ export default function FeaturedStartups() {
                   <span className={`px-3 py-1 ${s.tagBg} ${s.tag} rounded-full text-xs font-semibold`}>
                     {s.stage}
                   </span>
-                  <button className="flex items-center gap-1.5 text-sm font-semibold text-gray-700 group-hover:text-indigo-600 transition-colors">
+                  <button className="flex items-center gap-1.5 text-sm font-bold text-gray-700 group-hover:text-indigo-600 bg-white/60 group-hover:bg-indigo-50 px-3 py-1.5 rounded-xl border border-transparent group-hover:border-indigo-200 transition-all duration-300">
                     View Startup
                     <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -177,7 +177,7 @@ export default function FeaturedStartups() {
         >
           <a
             href="#all-startups"
-            className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl hover:opacity-90 hover:shadow-xl hover:shadow-amber-200 hover:-translate-y-0.5 transition-all duration-200"
+            className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl hover:scale-105 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-300/50 active:scale-100 transition-all duration-300"
           >
             Browse All Startups
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -64,7 +64,7 @@ export default function CTA() {
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="#apply"
-                className="group px-8 py-4 text-base font-bold text-indigo-700 bg-white rounded-2xl hover:bg-indigo-50 hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+                className="group px-8 py-4 text-base font-extrabold text-indigo-700 bg-white rounded-2xl hover:bg-indigo-50 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl active:scale-100 transition-all duration-300"
               >
                 Apply Now
                 <span className="ml-2 group-hover:translate-x-1 inline-block transition-transform">🚀</span>
@@ -72,7 +72,7 @@ export default function CTA() {
               <a
                 href="#partner"
                 id="partner"
-                className="px-8 py-4 text-base font-bold text-white border-2 border-white/40 rounded-2xl hover:bg-white/15 hover:border-white hover:-translate-y-1 transition-all duration-300"
+                className="px-8 py-4 text-base font-extrabold text-white border-2 border-white/40 rounded-2xl hover:bg-white/15 hover:border-white hover:scale-105 hover:-translate-y-1 active:scale-100 transition-all duration-300"
               >
                 Partner With Us
               </a>
